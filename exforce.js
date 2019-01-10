@@ -5,10 +5,10 @@ var getTab = function(tab){
     var classic   = "my";
 	var subDomain = url.split(".");
     if(url.indexOf(lightning) != -1){
-        url = subDomain + ".lightning.force.com/ltng/switcher?destination=classic";
+        url = subDomain[0] + ".lightning.force.com/ltng/switcher?destination=classic";
         window.open(url);
     }else if(url.indexOf(classic) != -1){
-        url = subDomain + ".lightning.force.com/one/one.app?source=alohaHeader#/home";
+        url = subDomain[0] + ".lightning.force.com/one/one.app?source=alohaHeader#/home";
         window.open(url);
     }
 
